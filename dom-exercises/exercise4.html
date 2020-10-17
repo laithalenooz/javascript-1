@@ -14,6 +14,37 @@
             font-size: 12pt;
         }
     </style>
+    <script>
+        function changeFontFamily() {
+            var text = document.getElementById("text");
+            var ff = document.getElementById("font_family");
+            text.style.fontFamily = ff.value;
+        }
+
+        function changeFontSize() {
+            var text = document.getElementById("text");
+            var fs = document.getElementById("font_size");
+            text.style.fontSize = fs.value;
+        }
+
+        function changeFontItalic() {
+            var text = document.getElementById("text");
+            var i = document.getElementById("font_italic").checked;
+            text.style.fontStyle = (i ? "italic" : "normal");
+        }
+
+        function changeFontBold() {
+            var text = document.getElementById("text");
+            var b = document.getElementById("font_bold").checked;
+            text.style.fontWeight = (b ? "bold" : "normal");
+        }
+
+        function changeFontUnderline() {
+            var text = document.getElementById("text");
+            var u = document.getElementById("font_underline").checked;
+            text.style.textDecoration = (u ? "underline" : "none");
+        }
+    </script>
 </head>
 <body>
 <form name="form">
